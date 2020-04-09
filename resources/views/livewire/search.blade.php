@@ -1,8 +1,7 @@
     <div>
-    <input wire:model="search" class="form-control brdrd" style="position: relative" type="text" placeholder="@lang('home.search')"/>
-
-
-    <div class="list-group"  style="position:absolute;width: 236px;">
+    <input wire:model="search"  class="form-control brdrd" style="position: relative" type="text" placeholder="@lang('home.search')"/>
+    <div style="position:fixed;top: 47px;bottom:0px;left:0px;right:0pxz-index:10"wire:click="clear" ></div>
+    <div class="list-group" style="position:absolute;width: 236px;">
         @if (!empty($search))
             <div class="list-group-item p-2  bg-yellow">@lang('home.writers')</div>
 

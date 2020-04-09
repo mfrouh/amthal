@@ -10,6 +10,10 @@ class Search extends Component
 {
     public $search = '';
 
+    public function clear()
+    {
+        $this->search='';
+    }
     public function render()
     {
         return view('livewire.search', [
