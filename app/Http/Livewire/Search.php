@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Livewire;
+
+use App\article;
+use App\post;
+use Livewire\Component;
+use App\writer;
+class Search extends Component
+{
+    public $search = '';
+
+    public function render()
+    {
+        return view('livewire.search', [
+            'writers' => writer::where('name','like',"%$this->search%")->take(3)->get(),
+            'articles' => article::where('content','like',"%$this->search%")->take(3)->get(),
+            'posts' => post::where('content','like',"%$this->search%")->take(3)->get(),
+            'search' => $this->search,
+        ]);
+    }
+}
