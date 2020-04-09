@@ -52,13 +52,12 @@
                         <li class="nav-item ">
                             <a class="nav-link text-white" href="/writers"> @lang('home.writers')</a>
                         </li>
-                        @livewire('search')
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav text-black @if(app()->getlocale()=='ar') mr-auto text-right @else ml-auto text-left @endif" >
                         <!-- Authentication Links -->
-
+                        @livewire('search')
                         @guest
                             <li class="nav-item ">
                                 <a class="nav-link text-white" href="{{ route('login') }}">@lang('home.login')</a>
