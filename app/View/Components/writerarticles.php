@@ -25,7 +25,7 @@ class writerarticles extends Component
     public function render()
     {
         return view('components.writerarticles',[
-            'articles'=>article::whereIn('id',$this->writer->articles->pluck('id')->toArray())->paginate('15'),
+            'articles'=>article::whereIn('id',$this->writer->articles->pluck('id')->toArray())->paginate('16'),
         ]);
     }
 }

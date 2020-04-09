@@ -14,7 +14,7 @@
            @endif
         </div>
         <div class="row p-2">@lang('home.information'):</div>
-        <div class="row p-2  brdrd">{{$writer->information}}</div>
+        <div class="row p-2  brdrd " style="line-height:2.2">{{$writer->information}}</div>
       </div>
    </div>
 </div>
