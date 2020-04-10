@@ -1,5 +1,5 @@
     <div>
-    <input wire:model="search"  class="form-control border-raduis-4-left border-raduis-4-right brdrd" style="position: relative" type="text" placeholder="@lang('home.search')"/>
+    <input wire:model="search"  class="form-control border-raduis-4-left border-raduis-4-right brdrd" style="height: calc(2.25rem + 0px);position: relative" type="text" placeholder="@lang('home.search')"/>
     <div class="list-group  form-text" style="position:absolute;width: 236px;z-index:11">
         @if (!empty($search))
             <div class="list-group-item p-2  bg-yellow">@lang('home.writers')</div>

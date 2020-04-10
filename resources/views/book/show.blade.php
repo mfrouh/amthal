@@ -19,7 +19,7 @@
                    </div>
                    <div class="row p-2 text-right">
                        @lang('home.url'):
-                       <a class="btn btn-link btn-sm" href="{{$book->url}}">@lang('home.url')</a>
+                       <a class="btn btn-link btn-sm"  href="{{$book->url}}">@lang('home.url')</a>
                    </div>
                </div>
            </div>
