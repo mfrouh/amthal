@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\book;
+use App\Http\Requests\Storebook;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
@@ -38,7 +39,7 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Storebook $request)
     {
         $book=new book();
         $book->user_id=auth()->user()->id;
@@ -82,7 +83,7 @@ class BookController extends Controller
      * @param  \App\book  $book
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, book $book)
+    public function update(Storebook $request, book $book)
     {
         $book->user_id=auth()->user()->id;
         $book->writer_id=$request->writer_id;

@@ -30,5 +30,6 @@ return
     'empty'=>'Not Found Results',
     'search'=>'Search',
     'book'=>'Book',
-    'books'=>'Books'
+    'books'=>'Books',
+    'url'=>'URL',
 ];
