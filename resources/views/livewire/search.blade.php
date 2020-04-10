@@ -14,7 +14,18 @@
            @empty
                <div class="list-group-item p-2 smaller">@lang('home.empty')</div>
            @endforelse
+            <div class="list-group-item p-2  bg-yellow">@lang('home.books')</div>
 
+           @forelse($books as $book)
+           <a class="alink" href="/book/{{$book->id}}">
+                <div class="list-group-item p-2 smaller">
+                <img src="{{url('/storage/book')}}/{{$book->image}}" class="searchwriter" >
+                {{$book->name}}
+                </div>
+            </a>
+           @empty
+               <div class="list-group-item p-2 smaller">@lang('home.empty')</div>
+           @endforelse
            <div class="list-group-item p-2  bg-yellow">@lang('home.amthal')</div>
 
            @forelse($posts as $post)
@@ -30,6 +41,8 @@
            @empty
                <div class="list-group-item p-2 smaller">@lang('home.empty')</div>
            @endforelse
+
+
         @endif
     </div>
 </div>

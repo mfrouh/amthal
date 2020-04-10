@@ -52,6 +52,9 @@
                         <li class="nav-item ">
                             <a class="nav-link text-white smaller" href="/writers"> @lang('home.writers')</a>
                         </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white smaller" href="/books"> @lang('home.books')</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -87,6 +90,9 @@
                                     <a class="dropdown-item " href="/writer">
                                        @lang('home.writers')
                                     </a>
+                                    <a class="dropdown-item " href="/book">
+                                        @lang('home.books')
+                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

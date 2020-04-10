@@ -29,4 +29,6 @@ return
     'writers'=>'Writers',
     'empty'=>'Not Found Results',
     'search'=>'Search',
+    'book'=>'Book',
+    'books'=>'Books'
 ];
