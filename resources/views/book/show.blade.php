@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-{{-- {{$writer->name}} --}}
+{{$book->name}}
 @endsection
 @section('content')
 <div class="container">

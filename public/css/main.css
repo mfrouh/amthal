@@ -551,6 +551,12 @@ color: rgb(0, 0, 0);
     z-index: 999;
     border: 2px #111;
 }
+.userimg
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 .img-book
 {
     width: 100%;
