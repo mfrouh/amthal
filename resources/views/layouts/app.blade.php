@@ -71,7 +71,7 @@
                         @endphp
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="{{url('/storage/user')}}/{{auth()->user()->image}}" class="userimg">
+                                    <img src="{{url('/storage/user/1.png')}}" class="userimg">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right text-@lang('home.left') text-white" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item " href="{{ route('logout') }}"
