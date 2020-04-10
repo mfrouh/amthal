@@ -582,9 +582,9 @@ color: rgb(0, 0, 0);
     color: black;
 }
 .searchwriter {
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 .smaller
 {
