@@ -10,4 +10,8 @@ class writer extends Model
     {
         return $this->hasMany('App\article');
     }
+    public function books()
+    {
+        return $this->hasMany('App\book');
+    }
 }

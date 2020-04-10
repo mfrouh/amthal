@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\article;
+use App\book;
 use App\post;
 use App\writer;
 use Illuminate\Http\Request;
@@ -28,4 +29,10 @@ class PageController extends Controller
         $writers=writer::paginate(9);
         return view('pages.writer',compact('writers'));
     }
+    public function books()
+    {
+        $books=book::paginate(9);
+        return view('pages.book',compact('books'));
+    }
+
 }

@@ -23,11 +23,14 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/post','PostController');
 Route::resource('/article','ArticleController');
 Route::resource('/writer','WriterController');
+Route::resource('/book','BookController');
 
 Route::get('/aqwal','PageController@aqwal');
 Route::get('/amthal','PageController@amthal');
 Route::get('/','PageController@main');
 Route::get('/writers','PageController@writers');
+Route::get('/books','PageController@books');
+
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-md navbar-white bg-primary shadow-sm" style="position:fixed;width: 100%;z-index: 99999;">
             <div class="container">
                 <a class="navbar-brand text-white " href="{{ url('/') }}">
-                  @lang('home.amthal')
+                    الحكيم
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
