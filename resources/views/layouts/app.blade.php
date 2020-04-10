@@ -44,13 +44,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav  @if(app()->getlocale()=='ar') mr-auto text-right @else ml-auto text-left @endif">
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/amthal"> @lang('home.amthal')</a>
+                            <a class="nav-link text-white smaller" href="/amthal"> @lang('home.amthal')</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/aqwal"> @lang('home.aqwal')</a>
+                            <a class="nav-link text-white smaller" href="/aqwal"> @lang('home.aqwal')</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="/writers"> @lang('home.writers')</a>
+                            <a class="nav-link text-white smaller" href="/writers"> @lang('home.writers')</a>
                         </li>
                     </ul>
 
@@ -59,8 +59,8 @@
                         <!-- Authentication Links -->
                         @livewire('search')
                         @guest
-                            <li class="nav-item ">
-                                <a class="nav-link text-white" href="{{ route('login') }}">@lang('home.login')</a>
+                            <li class="nav-item  ">
+                                <a class="nav-link text-white smaller" href="{{ route('login') }}">@lang('home.login')</a>
                             </li>
                         @else
                         @php
@@ -73,25 +73,33 @@
 
 
                                 <div class="dropdown-menu dropdown-menu-right text-@lang('home.left') text-white" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-white" href="{{ route('logout') }}"
+                                    <a class="dropdown-item " href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                       @lang('home.logout')
+                                       خروج
                                     </a>
-
+                                    <a class="dropdown-item " href="/article">
+                                     @lang('home.aqwal')
+                                    </a>
+                                    <a class="dropdown-item " href="/post">
+                                        @lang('home.amthal')
+                                    </a>
+                                    <a class="dropdown-item " href="/writer">
+                                       @lang('home.writers')
+                                    </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
                             </li>
                         @endguest
-                        <li class="nav-item  text-white">
+                        {{-- <li class="nav-item  text-white">
                             @if(app()->getlocale()=='ar')
                             <a class="nav-link text-white" href="/lang/en">EN</a>
                             @else
                             <a class="nav-link text-white" href="/lang/ar">ع</a>
                             @endif
-                        </li>
+                        </li> --}}
 
                     </ul>
                 </div>

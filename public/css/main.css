@@ -574,3 +574,7 @@ color: rgb(0, 0, 0);
     width: 60px;
     border-radius: 5px;
 }
+.smaller
+{
+    font-size: smaller;
+}

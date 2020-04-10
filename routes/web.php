@@ -12,14 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/lang/{lang}', function ($lang) {
-    if(session()->get('lang'))
-    {
-        session()->put('lang',$lang);
-        return back();
-    }
-});
-Route::group(['middleware'=>['lang']], function () {
+// Route::get('/lang/{lang}', function ($lang) {
+//     if(session()->get('lang'))
+//     {
+//         session()->put('lang',$lang);
+//         return back();
+//     }
+// });
+// Route::group(['middleware'=>['lang']], function () {
 Route::resource('/post','PostController');
 Route::resource('/article','ArticleController');
 Route::resource('/writer','WriterController');
@@ -31,4 +31,4 @@ Route::get('/writers','PageController@writers');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
-});
+// });

@@ -6,6 +6,7 @@
 <div class="container">
     <div class="card">
       <div class="card-body">
+        <a href="/article/create" class="btn btn-primary">@lang('home.create')</a>
           <table class="table table-striped table-inverse text-center">
               <thead class="thead-inverse">
                   <tr>
